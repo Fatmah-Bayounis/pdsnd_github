@@ -16,3 +16,6 @@ bickshare.py
 ### Credits
 https://github.com/udacity/pdsnd_github
 
+###About this project
+This project is a requirement for "PROGRAMMING FOR DATA SCIENCE" Udacity course.
+
