@@ -204,6 +204,7 @@ def display_data(df):
     loc = 0
     view = True
     print(df.iloc[loc:loc + 5])
+    #Display row data as long as the user want to continue
     while (view):
         display = input("Would you like to display the next five rows? Enter yes (Y) or no (N): ").lower()
         if display in ('no', 'n','yes','y'): 
@@ -225,7 +226,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df,city)
       
-        
+        #Ask the user if they want to view row data
         while True:
             view_data = input('\nWould you like to see the raw data? Enter yes (Y) or no (N): ')
             if view_data.lower() in ('no','n'):
@@ -235,7 +236,8 @@ def main():
               continue
             display_data(df)
             break
-
+        
+        #Restart the code all over again
         restart = input('\nWould you like to restart? Enter yes (Y) or no (N): ')
         if restart.lower() not in ('yes','y'):
             break
