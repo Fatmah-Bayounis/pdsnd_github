@@ -7,7 +7,7 @@
 Bickshare project
 
 ### Description
-Describe what your project is about and what it does
+Uncover bike share usage patterns for major cities in the United States.
 
 ### Files used
 bickshare.py
