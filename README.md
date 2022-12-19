@@ -11,6 +11,7 @@ Uncover bike share usage patterns for major cities in the United States.
 
 ### Files used
 bickshare.py
+.gitignore
 
 ### Credits
 https://github.com/udacity/pdsnd_github
