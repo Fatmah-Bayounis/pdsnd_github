@@ -22,7 +22,7 @@ def get_filters():
     try: 
         valid_city=True
         while (valid_city):
-            city=input('Enter the city name that you want to analyze. Cities can be (chicago, new york city, washington):')
+            city=str(input('Enter the city name that you want to analyze. Cities can be (chicago, new york city, washington):'))
             if city.lower() in ('chicago', 'new york', 'new york city', 'washington'):
                 valid_city=False
             else:
@@ -31,7 +31,7 @@ def get_filters():
         # Get user input for month (all, january, february, ... , june)
         valid_month=True
         while (valid_month):
-            month=input('Enter the month that you want to analyze. Months can be (all, january, february, March, april, may, june):')
+            month=str(input('Enter the month that you want to analyze. Months can be (all, january, february, March, april, may, june):'))
             if month.lower() in ('all', 'january', 'february', 'March','april','may','june'):
                 valid_month=False
             else:
@@ -40,7 +40,7 @@ def get_filters():
         # Get user input for day of week (all, monday, tuesday, ... sunday)
         valid_day=True
         while (valid_day):
-            day=input('Enter the day that you want to analyze. Day can be (all, monday, tuesday, wednesday, thursday, friday, saturday, sunday):')
+            day=str(input('Enter the day that you want to analyze. Day can be (all, monday, tuesday, wednesday, thursday, friday, saturday, sunday):'))
             if day.lower() in ('all', 'monday', 'tuesday', 'wednesday','thursday','friday','saturday','sunday'):
                 valid_day=False
             else:
